@@ -78,7 +78,7 @@ abstract class Carte
     
     protected bool BinLookup()
     {
-        var verificaBin = numeroCarta.ToString().Substring(1, 5);
+        var verificaBin = numeroCarta.ToString().Substring(0, 6);
         var binListVisa = BinList(verificaBin);
         if (binListVisa == true)
         {
